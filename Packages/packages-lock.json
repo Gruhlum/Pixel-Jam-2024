@@ -18,6 +18,23 @@
       },
       "hash": "52ebb2afc77b5f4346f5a27be07f96ac8f69576e"
     },
+    "com.hextecgames.gridbasesystem": {
+      "version": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/GridBaseSystem",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.hextecgames.basics": "1.0.0"
+      }
+    },
+    "com.hextecgames.rectgridsystem": {
+      "version": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/RectGridSystem",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.hextecgames.basics": "1.0.0",
+        "com.hextecgames.gridbasesystem": "1.0.0"
+      }
+    },
     "com.hextecgames.soundsystem": {
       "version": "https://github.com/Gruhlum/SoundSystem.git",
       "depth": 0,
@@ -25,7 +42,7 @@
       "dependencies": {
         "com.hextecgames.basics": "1.0.0"
       },
-      "hash": "996ae47d1857d81d708c52a848951cb0b2d615fb"
+      "hash": "17a8d2ed2fe1188c574068f2dfc6ec7e4c596f01"
     },
     "com.hextecgames.tweenlib": {
       "version": "https://github.com/Gruhlum/tweenLib.git",

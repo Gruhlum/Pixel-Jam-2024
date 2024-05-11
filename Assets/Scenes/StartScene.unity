@@ -934,6 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e353c15b0a51b8b479b583bd7b4bcbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
 --- !u!4 &1100087381
 Transform:
   m_ObjectHideFlags: 0
@@ -967,7 +968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -984,7 +985,7 @@ PrefabInstance:
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1100087380}
+      objectReference: {fileID: 11400000, guid: 8139ab2e976b85d4f9f5f91245827335, type: 2}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -999,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: StartGame
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1015,7 +1016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5809985295985602770, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8888980006038948621, guid: 9f8c4ff9df240c34bb6730ec42fab740, type: 3}
       propertyPath: m_Pivot.x

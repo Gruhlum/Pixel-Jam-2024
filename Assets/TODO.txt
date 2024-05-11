@@ -1,0 +1,11 @@
+
+__Phase 1__
+
+- dig water channels
+- till grass into farmland
+- plant seeds
+- have seeds grow under certain conditions
+
+
+__Phase 2__
+
