@@ -1,36 +1,25 @@
+using HexTecGames.GridBaseSystem;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace HexTecGames
 {
-	public class Crop : MonoBehaviour
+	public class Crop : TileObject
 	{
-        public int TotalGrowthTicks
+        public CropData CropData
         {
             get
             {
-                return totalGrowthTicks;
+                return cropData;
             }
             private set
             {
-                totalGrowthTicks = value;
+                cropData = value;
             }
         }
-        [SerializeField] private int totalGrowthTicks;
-
-        public int WaterPerTick
-        {
-            get
-            {
-                return waterPerTick;
-            }
-            private set
-            {
-                waterPerTick = value;
-            }
-        }
-        [SerializeField] private int waterPerTick;
+        private CropData cropData;
 
         public int CurrentGrowthTicks
         {
@@ -41,9 +30,31 @@ namespace HexTecGames
             private set
             {
                 currentGrowthTicks = value;
+                
             }
         }
         private int currentGrowthTicks;
 
+        public Crop(Coord center, BaseGrid grid, CropData data) : base(center, grid, data)
+        {
+            CropData = data;
+            GameController.OnTick += GameController_OnTick;
+            Sprite = CropData.GetCurrentSprite(CurrentGrowthTicks);
+        }
+        public override void Remove()
+        {
+            GameController.OnTick -= GameController_OnTick;
+            base.Remove();
+        }
+        private void GameController_OnTick()
+        {
+            IncreaseGrowth(1);
+        }
+
+        public void IncreaseGrowth(int amount)
+        {
+            CurrentGrowthTicks += amount;
+            Sprite = CropData.GetCurrentSprite(CurrentGrowthTicks);
+        }
     }
 }

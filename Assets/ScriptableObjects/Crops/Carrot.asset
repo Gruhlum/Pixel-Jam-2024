@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c3b78b40e31b2439e3aeef97171fc1, type: 3}
+  m_Name: Carrot
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  requiredGrowthTicks: 8
+  waterPerTick: 2
+  costs:
+  - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
+    value: 3
+  sprites:
+  - {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: -170439489, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: -173996315, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
