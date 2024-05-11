@@ -944,7 +944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resources:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
-    value: 20
+    value: 40
     maximumValue: 9999
     display: {fileID: 1453282504}
 --- !u!4 &1452313837
