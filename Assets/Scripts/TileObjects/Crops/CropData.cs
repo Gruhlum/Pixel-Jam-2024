@@ -6,7 +6,7 @@ using UnityEngine;
 namespace HexTecGames
 {
 	[CreateAssetMenu(menuName = "HexTecGames/CropData")]
-	public class CropData : TileObjectData, ICost
+	public class CropData : CostObjectData
     {
         public int RequiredGrowthTicks
         {
@@ -33,8 +33,6 @@ namespace HexTecGames
             }
         }
         [SerializeField] private int waterPerTick;
-
-        [SerializeField] private List<ResourceValue> costs = new List<ResourceValue>();
 
 
         public override bool IsDraggable
@@ -78,39 +76,6 @@ namespace HexTecGames
             return new Crop(center, grid, this);
         }
 
-        public bool IsAffordable(List<Resource> resources)
-        {
-            foreach (var cost in costs)
-            {
-                Resource result = resources.Find(x => x.Data == cost.Data);
-                if (result == null)
-                {
-                    Debug.Log("Could not find resource of type: " + cost.Data);
-                }
-                if (result.Value < cost.Value)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        public void SubtractResources(List<Resource> resources)
-        {
-            foreach (var cost in costs)
-            {
-                Resource result = resources.Find(x => x.Data == cost.Data);
-                if (result == null)
-                {
-                    Debug.Log("Could not find resource of type: " + cost.Data);
-                }
-                result.Value -= cost.Value;
-            }
-        }
-
-        public ResourceValue GetCost()
-        {
-            return costs[0];
-        }
+        
     }
 }
