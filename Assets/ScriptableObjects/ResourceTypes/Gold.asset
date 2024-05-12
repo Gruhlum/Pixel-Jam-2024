@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f65dda932c55d41ac15909e2f06d41, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
+  icon: {fileID: 544121799, guid: 3f9e8c07e04f1974ab736a66fd76009a, type: 3}
