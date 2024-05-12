@@ -6,8 +6,8 @@ using UnityEngine;
 
 namespace HexTecGames
 {
-	public class Crop : TileObject
-	{
+    public class Crop : TileObject
+    {
         public CropData CropData
         {
             get
@@ -30,10 +30,45 @@ namespace HexTecGames
             private set
             {
                 currentGrowthTicks = value;
-                
+
             }
         }
         private int currentGrowthTicks;
+
+        public int DryTicks
+        {
+            get
+            {
+                return dryTicks;
+            }
+            private set
+            {
+                dryTicks = value;
+            }
+        }
+        private int dryTicks;
+
+
+        public bool IsWatered
+        {
+            get
+            {
+                return isWatered;
+            }
+            private set
+            {
+                isWatered = value;
+            }
+        }
+        private bool isWatered;
+
+        public bool IsFullyGrown
+        {
+            get
+            {
+                return CurrentGrowthTicks >= CropData.RequiredGrowthTicks;
+            }
+        }
 
         public Crop(Coord center, BaseGrid grid, CropData data) : base(center, grid, data)
         {
@@ -46,12 +81,25 @@ namespace HexTecGames
             GameController.OnTick -= GameController_OnTick;
             base.Remove();
         }
+
+        public void WaterCrop()
+        {
+            IsWatered = true;
+        }
         private void GameController_OnTick()
         {
-            IncreaseGrowth(1);
+            if (IsWatered)
+            {
+                IncreaseGrowth(1);
+                IsWatered = false;
+            }
+            else IncreaseTryTicks();
         }
-
-        public void IncreaseGrowth(int amount)
+        private void IncreaseTryTicks()
+        {
+            DryTicks++;
+        }
+        private void IncreaseGrowth(int amount)
         {
             CurrentGrowthTicks += amount;
             Sprite = CropData.GetCurrentSprite(CurrentGrowthTicks);

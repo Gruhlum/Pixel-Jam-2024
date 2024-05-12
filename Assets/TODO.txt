@@ -1,4 +1,36 @@
 
+
+Water system:
+
+plants need water to grow
+water gets replenished when it rains
+connected waterbuildings balance water level with each other
+
+Buildings:
+
+
+Obelisk
+- Center point of the farm
+- stores some amount of water
+
+Moisture Trap
+- Generates a small amount of water every day
+
+Trench Gate
+- can be enabled/disabled
+- can block water flow
+
+trench / water tile:
+- holds a certain amount of water
+- when it is hot, loses water
+- gives water to adjacent plants
+
+
+
+
+
+
+
 __Phase 1__
 
 - dig water channels

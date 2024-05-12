@@ -9,7 +9,9 @@ namespace HexTecGames
     {
         [SerializeField] private int secondsPerTick = 4;
 
+        public static event Action OnBeforeTick;
         public static event Action OnTick;
+        public static event Action OnAfterTick;
 
         private float timer;
 
@@ -19,7 +21,9 @@ namespace HexTecGames
             if (timer >= secondsPerTick)
             {
                 timer -= secondsPerTick;
+                OnBeforeTick?.Invoke();
                 OnTick?.Invoke();
+                OnAfterTick?.Invoke();
             }
         }
     }
