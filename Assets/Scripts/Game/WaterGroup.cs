@@ -24,7 +24,7 @@ namespace HexTecGames
             int totalWater = waterStorages.Sum(x => x.CurrentWater);
             int totalStorage = waterStorages.Sum(x => x.WaterData.MaximumWater);
             float percent = totalWater / (float)totalStorage;
-            Debug.Log(percent);
+            
             foreach (var waterStorage in waterStorages)
             {
                 int water = Mathf.FloorToInt(waterStorage.WaterData.MaximumWater * percent);

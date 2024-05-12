@@ -129,7 +129,7 @@ namespace HexTecGames
             GetCropNeighbours();
             foreach (var crop in cropNeighbours)
             {
-                if (crop.IsFullyGrown)
+                if (crop.IsFullyGrown || crop.IsWatered)
                 {
                     continue;
                 }

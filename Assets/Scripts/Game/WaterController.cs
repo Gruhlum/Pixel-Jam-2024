@@ -20,6 +20,7 @@ namespace HexTecGames
         {
             grid.OnTileObjectAdded += Grid_OnTileObjectAdded;
             grid.OnTileObjectRemoved += Grid_OnTileObjectRemoved;
+
         }
         void OnDestroy()
         {
