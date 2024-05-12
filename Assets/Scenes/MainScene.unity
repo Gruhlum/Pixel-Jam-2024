@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displaySpawner:
-    prefab: {fileID: 7181157118296541136, guid: 237152e85a7840f438a75b84db9eb96b, type: 3}
+    prefab: {fileID: 3614207408638415890, guid: 9890ce4e409968141bbc088d48e81894, type: 3}
     parent: {fileID: 2929663922907038910}
   displays: []
   items:
