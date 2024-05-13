@@ -42,7 +42,6 @@ namespace HexTecGames
                 return true;
             }
         }
-
         public override bool IsWall
         {
             get
