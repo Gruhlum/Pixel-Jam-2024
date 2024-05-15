@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c3b78b40e31b2439e3aeef97171fc1, type: 3}
   m_Name: Squash
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   sprite: {fileID: 0}
-  requiredGrowthTicks: 8
-  waterPerTick: 2
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 4
+  requiredGrowthTicks: 8
+  waterPerTick: 2
   sprites:
   - {fileID: 1140353703, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: 282796816, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

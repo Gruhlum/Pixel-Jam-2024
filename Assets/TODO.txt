@@ -1,5 +1,19 @@
 
 
+
+Units:
+
+Enemies:
+- walk down their lane, target any unit between current position and end position
+- If obelisk is targeted and they are attacked, attack closest unit
+
+
+Friendlies:
+- target closest enemy
+- if no enemies, melees are closer to the spawn
+
+
+
 Water system:
 
 plants need water to grow

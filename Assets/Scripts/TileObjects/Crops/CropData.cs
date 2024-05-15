@@ -70,11 +70,14 @@ namespace HexTecGames
             else return sprites[1];
         }
 
-        public override TileObject CreateTileObject(Coord center, BaseGrid grid)
+        public override GridObject CreateObject(Coord center, BaseGrid grid)
         {
             return new Crop(center, grid, this);
         }
 
-        
+        public override bool IsValidCoord(Coord coord, BaseGrid grid)
+        {
+            return grid.IsTileEmpty(coord);
+        }
     }
 }

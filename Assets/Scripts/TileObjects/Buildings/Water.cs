@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace HexTecGames
 {
-    public class Water : TileObject
+    public class Water : Tile
     {
         public int CurrentWater
         {
@@ -60,7 +60,18 @@ namespace HexTecGames
             GameController.OnTick += GameController_OnTick;
             GameController.OnAfterTick += GameController_OnAfterTick;
 
-            var neighbours = Grid.GetNeighbourObjects<Water>(GetNormalizedCoords());
+            var neighboursCoords = Grid.GetNeighbourCoords(Center);
+            List<Tile> tileNeighbours = grid.GetTiles(neighboursCoords);
+            List<Water> neighbours = new List<Water>();
+
+            foreach (var tile in tileNeighbours)
+            {
+                if (tile is Water water)
+                {
+                    neighbours.Add(water);
+                }
+            }
+
             if (neighbours.Count == 0)
             {
                 waterGroup = new WaterGroup();
@@ -118,7 +129,7 @@ namespace HexTecGames
         }
         private void GetCropNeighbours()
         {
-            cropNeighbours = grid.GetNeighbourObjects<Crop>(GetNormalizedCoords());
+            cropNeighbours = Grid.GetNeighbourObjects<Crop>(new List<Coord>() { Center });
         }
         private void GameController_OnTick()
         {

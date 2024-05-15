@@ -10,7 +10,7 @@ namespace HexTecGames
 	{
 		[SerializeField] private ResourceDisplay resourceDisplay = default;
 
-        protected override void DrawItem(BaseTileObjectData item)
+        protected override void DrawItem(GridObjectData item)
         {
             base.DrawItem(item);
             if (item is ICost cost)

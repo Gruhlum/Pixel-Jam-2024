@@ -16,7 +16,8 @@ namespace HexTecGames
 
         public WaterGroup()
         {
-            color = new Color(Random.Range(0.4f, 1f), Random.Range(0.4f, 1f), Random.Range(0.4f, 1f), 1);
+            color = Color.white;
+            //color = new Color(Random.Range(0.4f, 1f), Random.Range(0.4f, 1f), Random.Range(0.4f, 1f), 1);
         }
 
         public void BalanceWater()

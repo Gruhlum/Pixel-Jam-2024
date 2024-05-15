@@ -7,7 +7,7 @@
       "dependencies": {
         "com.unity.textmeshpro": "3.0.0"
       },
-      "hash": "9a0186617a3b1d6d942cb31b9aa06856f9d93a52"
+      "hash": "a5e54c62ad63647d0eda3db517f5b3c659454e52"
     },
     "com.hextecgames.buildhelper": {
       "version": "https://github.com/Gruhlum/buildhelper.git",
@@ -26,7 +26,7 @@
         "com.hextecgames.basics": "1.0.0",
         "com.unity.textmeshpro": "3.0.0"
       },
-      "hash": "3a0104743192b58696090df8912fca0246f31b51"
+      "hash": "df5cd3bf5864dc7d32ad37135ab1dc3e447f9642"
     },
     "com.hextecgames.rectgridsystem": {
       "version": "https://github.com/Gruhlum/rectgridsystem.git",

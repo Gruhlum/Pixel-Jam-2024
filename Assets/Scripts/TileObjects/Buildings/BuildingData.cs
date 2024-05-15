@@ -15,5 +15,10 @@ namespace HexTecGames
                 return false;
             }
         }
+
+        public override bool IsValidCoord(Coord coord, BaseGrid grid)
+        {
+            return grid.IsTileEmpty(coord);
+        }
     }
 }

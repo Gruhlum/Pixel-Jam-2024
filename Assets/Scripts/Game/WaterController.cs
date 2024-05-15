@@ -18,16 +18,16 @@ namespace HexTecGames
 
         void Awake()
         {
-            grid.OnTileObjectAdded += Grid_OnTileObjectAdded;
-            grid.OnTileObjectRemoved += Grid_OnTileObjectRemoved;
+            grid.OnTileAdded += Grid_OnTileObjectAdded;
+            grid.OnTileRemoved += Grid_OnTileObjectRemoved;
 
         }
         void OnDestroy()
         {
-            grid.OnTileObjectAdded -= Grid_OnTileObjectAdded;
-            grid.OnTileObjectRemoved -= Grid_OnTileObjectRemoved;
+            grid.OnTileAdded -= Grid_OnTileObjectAdded;
+            grid.OnTileRemoved -= Grid_OnTileObjectRemoved;
         }
-        private void Grid_OnTileObjectRemoved(TileObject obj)
+        private void Grid_OnTileObjectRemoved(Tile obj)
         {
             if (obj is IWaterStorage)
             {
@@ -36,7 +36,7 @@ namespace HexTecGames
             }
         }
 
-        private void Grid_OnTileObjectAdded(TileObject obj)
+        private void Grid_OnTileObjectAdded(Tile obj)
         {
             if (obj is Water water)
             {

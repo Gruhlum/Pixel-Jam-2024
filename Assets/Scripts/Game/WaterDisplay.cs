@@ -33,7 +33,7 @@ namespace HexTecGames
             }
             textGUI.text = $"{water.CurrentWater}/{water.WaterData.MaximumWater}";
         }
-        private void Water_OnRemoved(GridBaseSystem.TileObject obj)
+        private void Water_OnRemoved(GridBaseSystem.GridObject obj)
         {
             if (water != null)
             {

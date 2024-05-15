@@ -6,7 +6,7 @@ using UnityEngine;
 namespace HexTecGames
 {
     [CreateAssetMenu(menuName = "HexTecGames/WaterData")]
-    public class WaterData : CostObjectData
+    public class WaterData : RuleTileData
     {
         public int MaximumWater
         {
@@ -21,15 +21,7 @@ namespace HexTecGames
         }
         [SerializeField] private int maximumWater;
 
-
-        public override bool IsWall
-        {
-            get
-            {
-                return true;
-            }
-        }
-        public override TileObject CreateTileObject(Coord center, BaseGrid grid)
+        public override GridObject CreateObject(Coord center, BaseGrid grid)
         {
             return new Water(center, grid, this);
         }

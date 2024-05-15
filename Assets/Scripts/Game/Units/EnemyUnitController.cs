@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace HexTecGames
 {
-	public class Unit : MonoBehaviour
-	{
+	public class EnemyUnitController : UnitController
+    {
 		
 	}
 }
