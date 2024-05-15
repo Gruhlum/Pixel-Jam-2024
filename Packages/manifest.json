@@ -2,8 +2,8 @@
   "dependencies": {
     "com.hextecgames.basics": "https://github.com/Gruhlum/Basics.git",
     "com.hextecgames.buildhelper": "https://github.com/Gruhlum/buildhelper.git",
-    "com.hextecgames.gridbasesystem": "https://github.com/Gruhlum/gridbasesystem.git",
-    "com.hextecgames.rectgridsystem": "https://github.com/Gruhlum/rectgridsystem.git",
+    "com.hextecgames.gridbasesystem": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/GridBaseSystem",
+    "com.hextecgames.rectgridsystem": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/RectGridSystem",
     "com.hextecgames.soundsystem": "https://github.com/Gruhlum/SoundSystem.git",
     "com.hextecgames.tweenlib": "https://github.com/Gruhlum/tweenLib.git",
     "com.hextecgames.webglpackage": "https://github.com/Gruhlum/webglpackage.git",

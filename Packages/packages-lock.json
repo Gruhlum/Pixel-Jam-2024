@@ -19,24 +19,22 @@
       "hash": "52ebb2afc77b5f4346f5a27be07f96ac8f69576e"
     },
     "com.hextecgames.gridbasesystem": {
-      "version": "https://github.com/Gruhlum/gridbasesystem.git",
+      "version": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/GridBaseSystem",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.hextecgames.basics": "1.0.0",
         "com.unity.textmeshpro": "3.0.0"
-      },
-      "hash": "df5cd3bf5864dc7d32ad37135ab1dc3e447f9642"
+      }
     },
     "com.hextecgames.rectgridsystem": {
-      "version": "https://github.com/Gruhlum/rectgridsystem.git",
+      "version": "file:C:/Users/Patrick/Documents/Projects/Unity/_Misc/Packages/RectGridSystem",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.hextecgames.basics": "1.0.0",
         "com.hextecgames.gridbasesystem": "1.0.0"
-      },
-      "hash": "5bbfd184970c68e62889fb420794420e26da3c14"
+      }
     },
     "com.hextecgames.soundsystem": {
       "version": "https://github.com/Gruhlum/SoundSystem.git",
