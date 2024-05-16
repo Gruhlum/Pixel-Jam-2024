@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Water
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
+  placementSound: {fileID: 11400000, guid: c3a16f899b92fa34db0332270a1f41c3, type: 2}
+  isReplaceable: 1
   sprite: {fileID: -692803506, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
   ruleDatas:
   - neighbours:
@@ -152,4 +154,5 @@ MonoBehaviour:
       y: 0
       isValid: 0
     sprite: {fileID: -1843508787, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
-  maximumWater: 20
+  affectedTileDatas:
+  - {fileID: 11400000, guid: 1ef6df6fd4f738a4b8e60617e3c6df17, type: 2}

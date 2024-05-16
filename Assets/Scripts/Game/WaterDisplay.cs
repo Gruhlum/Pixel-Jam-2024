@@ -31,7 +31,7 @@ namespace HexTecGames
             {
                 Debug.Log("null");
             }
-            textGUI.text = $"{water.CurrentWater}/{water.WaterData.MaximumWater}";
+            textGUI.text = $"{water.CurrentWater}";
         }
         private void Water_OnRemoved(GridBaseSystem.GridObject obj)
         {

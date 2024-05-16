@@ -1,4 +1,5 @@
 using HexTecGames.GridBaseSystem;
+using HexTecGames.SoundSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,24 +52,15 @@ namespace HexTecGames
         }     
 
         [SerializeField] public Sprite[] sprites = new Sprite[3];
-
-        public override Sprite GetSprite()
+        [SerializeField] public Sprite[] drySprites = new Sprite[3];
+        public SoundClipBase GrowSound
         {
-            return sprites[2];
-        }
-
-        public Sprite GetCurrentSprite(int currentGrowth)
-        {
-            if (currentGrowth >= RequiredGrowthTicks)
+            get
             {
-                return sprites[2];
+                return growSound;
             }
-            else if (currentGrowth < RequiredGrowthTicks / 2)
-            {
-                return sprites[0];
-            }
-            else return sprites[1];
         }
+        [SerializeField] private SoundClipBase growSound = default;       
 
         public override GridObject CreateObject(Coord center, BaseGrid grid)
         {

@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d811ccd778175ff4ea7a34c710bc3fba, type: 3}
-  m_Name: Water 1
+  m_Script: {fileID: 11500000, guid: 8997eab435081a545bb6c7222054f826, type: 3}
+  m_Name: WaterSource
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  sprite: {fileID: -692803506, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
+  placementSound: {fileID: 0}
+  isReplaceable: 0
+  sprite: {fileID: 0}
   ruleDatas:
   - neighbours:
     - x: 0
@@ -152,3 +154,5 @@ MonoBehaviour:
       y: 0
       isValid: 0
     sprite: {fileID: -1843508787, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
+  affectedTileDatas:
+  - {fileID: 11400000, guid: 5ecedcb2d389ba6429cc0cd72bbf5bc4, type: 2}

@@ -6,6 +6,10 @@ namespace HexTecGames
 {	
 	public interface IWaterStorage
 	{
-		
-	}
+        public WaterGroup WaterGroup
+        {
+            get;
+            set;
+        }
+    }
 }

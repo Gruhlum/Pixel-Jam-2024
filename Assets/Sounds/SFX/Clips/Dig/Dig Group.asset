@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01cfb620b4ce974997c296a8f337fe1, type: 3}
+  m_Name: Dig Group
+  m_EditorClassIdentifier: 
+  playAllAtOnce: 0
+  Order: 0
+  SoundClips:
+  - {fileID: 11400000, guid: 3a70faa339bafe14cb5cf6badaa27398, type: 2}
+  - {fileID: 11400000, guid: 31686280d091268429f274e85d7dea5f, type: 2}
+  - {fileID: 11400000, guid: 9137dc6e10048e8488f2d942934ff765, type: 2}
+  - {fileID: 11400000, guid: 47ab774d322540d4292430dd7a6bfba1, type: 2}
+  - {fileID: 11400000, guid: 3e808ab5d75e5ca4bbe94a6329335e25, type: 2}
+  - {fileID: 11400000, guid: deae417343dbb8f488c711904195c90a, type: 2}
+  - {fileID: 11400000, guid: a5ed889307e7b024b84ad9997052d09b, type: 2}
+  - {fileID: 11400000, guid: d7c823aa560f6b94fa1c1aa0797a9096, type: 2}

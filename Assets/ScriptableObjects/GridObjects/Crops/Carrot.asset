@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Carrot
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  sprite: {fileID: 0}
+  placementSound: {fileID: 11400000, guid: d1726a8662c0a44459907c215889f900, type: 2}
+  sprite: {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 3
@@ -23,3 +24,8 @@ MonoBehaviour:
   - {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: -170439489, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: -173996315, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  drySprites:
+  - {fileID: 1140353703, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 282796816, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1698535481, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  growSound: {fileID: 11400000, guid: c14e9041c917f02428464a506793c033, type: 2}

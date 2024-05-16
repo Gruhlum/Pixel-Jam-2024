@@ -74,7 +74,7 @@ namespace HexTecGames
         {
             CropData = data;
             GameController.OnTick += GameController_OnTick;
-            Sprite = CropData.GetCurrentSprite(CurrentGrowthTicks);
+            Sprite = CropData.Sprite;
         }
         public override void Remove()
         {
@@ -90,10 +90,12 @@ namespace HexTecGames
         {
             if (IsWatered)
             {
-                IncreaseGrowth(1);
-                IsWatered = false;
+                IncreaseGrowth(1);              
             }
             else IncreaseTryTicks();
+
+            UpdateSprite();
+            IsWatered = false;
         }
         private void IncreaseTryTicks()
         {
@@ -102,7 +104,38 @@ namespace HexTecGames
         private void IncreaseGrowth(int amount)
         {
             CurrentGrowthTicks += amount;
-            Sprite = CropData.GetCurrentSprite(CurrentGrowthTicks);
+            
+        }
+        public void UpdateSprite()
+        {
+            Sprite sprite = FindCorrectSprite();
+            if (Sprite != sprite)
+            {
+                Sprite = sprite;
+                CropData.GrowSound?.Play();
+            }
+        }
+        private Sprite FindCorrectSprite()
+        {
+            int index = GetSpriteIndex();
+            if (IsWatered)
+            {
+                return CropData.sprites[index];
+            }
+            else return CropData.drySprites[index];
+            
+        }
+        private int GetSpriteIndex()
+        {
+            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks)
+            {
+                return 2;
+            }
+            else if (CurrentGrowthTicks < CropData.RequiredGrowthTicks / 2)
+            {
+                return 0;
+            }
+            else return 1;
         }
     }
 }

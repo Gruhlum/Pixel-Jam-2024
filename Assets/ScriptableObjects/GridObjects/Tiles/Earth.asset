@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Earth
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
+  placementSound: {fileID: 0}
+  isReplaceable: 1
   sprite: {fileID: 284619880, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
   ruleDatas: []

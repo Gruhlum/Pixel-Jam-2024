@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 1749481282826967359}
   - component: {fileID: 6631700917978260130}
   - component: {fileID: 7197418025464881581}
-  - component: {fileID: 1947243126865699454}
+  - component: {fileID: 7817477973216349014}
   m_Layer: 5
   m_Name: PlaceableDisplayController
   m_TagString: Untagged
@@ -158,8 +158,12 @@ MonoBehaviour:
     parent: {fileID: 1749481282826967359}
   displays: []
   items:
-  - {fileID: 11400000, guid: 0c0dccf09255a0843a3bc96fa20f6891, type: 2}
   - {fileID: 11400000, guid: 5ecedcb2d389ba6429cc0cd72bbf5bc4, type: 2}
+  - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
+  - {fileID: 11400000, guid: 0c0dccf09255a0843a3bc96fa20f6891, type: 2}
+  - {fileID: 11400000, guid: 3e88a29442373ff4c9c83cb7e5537f0b, type: 2}
+  - {fileID: 11400000, guid: 1ef6df6fd4f738a4b8e60617e3c6df17, type: 2}
+  - {fileID: 11400000, guid: 3013b70132b12f84892663fb14e80b60, type: 2}
   gridPlacementController: {fileID: 0}
 --- !u!114 &7197418025464881581
 MonoBehaviour:
@@ -175,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &1947243126865699454
+--- !u!114 &7817477973216349014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +188,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6414319496072817830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -192,7 +196,7 @@ MonoBehaviour:
     m_Right: 10
     m_Top: 10
     m_Bottom: 10
-  m_ChildAlignment: 4
+  m_ChildAlignment: 0
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1

@@ -264,11 +264,13 @@ MonoBehaviour:
   width: 17
   height: 17
   allTileDatas:
+  - {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}
   - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
   - {fileID: 11400000, guid: 5ecedcb2d389ba6429cc0cd72bbf5bc4, type: 2}
   - {fileID: 11400000, guid: 3686ca7a75a1ab947beeabb8a9e129cb, type: 2}
-  - {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}
-  gridToLoad: {fileID: 11400000, guid: ee87cffde2c0a0d43a2a4c9e690e32d7, type: 2}
+  - {fileID: 11400000, guid: 1ef6df6fd4f738a4b8e60617e3c6df17, type: 2}
+  - {fileID: 11400000, guid: 3013b70132b12f84892663fb14e80b60, type: 2}
+  gridToLoad: {fileID: 11400000, guid: dcf65541957fba54aab245120febe291, type: 2}
 --- !u!1 &8309420847925513746
 GameObject:
   m_ObjectHideFlags: 0
