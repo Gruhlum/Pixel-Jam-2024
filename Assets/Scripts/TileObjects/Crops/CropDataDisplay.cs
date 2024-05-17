@@ -16,7 +16,9 @@ namespace HexTecGames
             if (item is ICost cost)
             {
                 resourceDisplay.SetData(cost.GetCost());
+                resourceDisplay.gameObject.SetActive(true);
             }
+            else resourceDisplay.gameObject.SetActive(false);
         }
     }
 }

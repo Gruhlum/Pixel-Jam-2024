@@ -6,8 +6,8 @@ using UnityEngine;
 
 namespace HexTecGames
 {
-	[CreateAssetMenu(menuName = "HexTecGames/CropData")]
-	public class CropData : CostObjectData
+    [CreateAssetMenu(menuName = "HexTecGames/CropData")]
+    public class CropData : CostObjectData
     {
         public UnitData UnitData
         {
@@ -62,10 +62,11 @@ namespace HexTecGames
             {
                 return false;
             }
-        }     
+        }
 
         [SerializeField] public Sprite[] sprites = new Sprite[3];
         [SerializeField] public Sprite[] drySprites = new Sprite[3];
+
         public SoundClipBase GrowSound
         {
             get
@@ -73,7 +74,9 @@ namespace HexTecGames
                 return growSound;
             }
         }
-        [SerializeField] private SoundClipBase growSound = default;       
+        [SerializeField] private SoundClipBase growSound = default;
+
+        [SerializeField] private List<TileData> validEarthTiles = default;
 
         public override GridObject CreateObject(Coord center, BaseGrid grid)
         {
@@ -82,7 +85,11 @@ namespace HexTecGames
 
         public override bool IsValidCoord(Coord coord, BaseGrid grid)
         {
-            return grid.IsTileEmpty(coord);
+            if (!grid.IsTileEmpty(coord))
+            {
+                return false;
+            }
+            return validEarthTiles.Contains(grid.GetTile(coord).Data);
         }
     }
 }

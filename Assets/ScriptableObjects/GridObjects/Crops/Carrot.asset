@@ -30,3 +30,6 @@ MonoBehaviour:
   - {fileID: 282796816, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: 1698535481, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   growSound: {fileID: 11400000, guid: c14e9041c917f02428464a506793c033, type: 2}
+  validEarthTiles:
+  - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
+  - {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}
