@@ -9,6 +9,19 @@ namespace HexTecGames
 	[CreateAssetMenu(menuName = "HexTecGames/CropData")]
 	public class CropData : CostObjectData
     {
+        public UnitData UnitData
+        {
+            get
+            {
+                return unitData;
+            }
+            private set
+            {
+                unitData = value;
+            }
+        }
+        [SerializeField] private UnitData unitData;
+
         public int RequiredGrowthTicks
         {
             get

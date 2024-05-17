@@ -18,6 +18,7 @@ MonoBehaviour:
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 3
+  unitData: {fileID: 11400000, guid: 2705d763b56e0334e912f92ece158d27, type: 2}
   requiredGrowthTicks: 8
   waterPerTick: 2
   sprites:

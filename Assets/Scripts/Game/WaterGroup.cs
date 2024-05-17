@@ -14,6 +14,9 @@ namespace HexTecGames
 
         public bool hasSource;
 
+        private bool changeColor = false;
+
+
         public WaterGroup()
         {
             //color = Color.white;
@@ -31,7 +34,7 @@ namespace HexTecGames
         public void Add(WaterStorage water)
         {
             waterStorages.Add(water);
-            water.Color = color;
+            if (changeColor) water.Color = color;
         }
         public void Clear()
         {

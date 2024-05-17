@@ -1,11 +1,12 @@
+using HexTecGames.GridBaseSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace HexTecGames
 {
-	[CreateAssetMenu(menuName = "HexTecGames/UnitData")]
-	public class UnitData : ScriptableObject
+    [CreateAssetMenu(menuName = "HexTecGames/UnitData")]
+    public class UnitData : ScriptableObject
 	{
         public int MaxHealth
         {
@@ -72,18 +73,6 @@ namespace HexTecGames
         }
         [SerializeField] private float moveSpeed;
 
-        public Sprite Sprite
-        {
-            get
-            {
-                return sprite;
-            }
-            private set
-            {
-                sprite = value;
-            }
-        }
-        [SerializeField] private Sprite sprite;
-
+        public Sprite sprite;
     }
 }

@@ -66,9 +66,16 @@ namespace HexTecGames
         {
             get
             {
-                return CurrentGrowthTicks >= CropData.RequiredGrowthTicks;
+                return isFullyGrown;
+            }
+            set
+            {
+                isFullyGrown = value;
             }
         }
+        private bool isFullyGrown;
+
+        public event Action<Crop> OnFullyGrown;
 
         public Crop(Coord center, BaseGrid grid, CropData data) : base(center, grid, data)
         {
@@ -104,7 +111,15 @@ namespace HexTecGames
         private void IncreaseGrowth(int amount)
         {
             CurrentGrowthTicks += amount;
-            
+            if (IsFullyGrown)
+            {
+                return;
+            }
+            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks)
+            {
+                IsFullyGrown = true;
+                OnFullyGrown?.Invoke(this);
+            }
         }
         public void UpdateSprite()
         {

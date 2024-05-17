@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28152bbb2595fc64187148c2baf90f9e, type: 3}
-  m_Name: Farm
+  m_Name: Farm 5
   m_EditorClassIdentifier: 
   SavedGrid:
     saveDatas:
@@ -18,1084 +18,1444 @@ MonoBehaviour:
         x: 0
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 0
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 0
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 0
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 0
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 0
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 1
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 1
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 1
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 1
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 1
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 2
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 2
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 2
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 2
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 2
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 3
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 3
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 3
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 3
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 3
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 4
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 4
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 4
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 4
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 4
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 5
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 5
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 5
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 5
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 5
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 6
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 6
         y: 7
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 6
         y: 8
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 6
         y: 9
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 6
         y: 10
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 6
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 6
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 7
+        y: 0
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 1
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 2
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 3
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 4
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 5
+        isValid: 0
+      dataName: Path
     - position:
         x: 7
         y: 6
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 7
         y: 7
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 7
         y: 8
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 7
         y: 9
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 7
         y: 10
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
+    - position:
+        x: 7
+        y: 11
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 12
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 13
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 14
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 15
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 7
+        y: 16
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 0
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 1
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 2
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 3
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 4
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 5
+        isValid: 0
+      dataName: Path
     - position:
         x: 8
         y: 6
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 8
         y: 7
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 8
         y: 8
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 8
         y: 9
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 8
         y: 10
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
+    - position:
+        x: 8
+        y: 11
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 12
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 13
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 14
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 15
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 8
+        y: 16
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 0
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 1
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 2
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 3
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 4
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 5
+        isValid: 0
+      dataName: Path
     - position:
         x: 9
         y: 6
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 9
         y: 7
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 9
         y: 8
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 9
         y: 9
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 9
         y: 10
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
+    - position:
+        x: 9
+        y: 11
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 12
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 13
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 14
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 15
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 9
+        y: 16
+        isValid: 0
+      dataName: Path
     - position:
         x: 10
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 6
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 10
         y: 7
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 10
         y: 8
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 10
         y: 9
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 10
         y: 10
         isValid: 0
-      dataName: Water
+      dataName: WaterSource
     - position:
         x: 10
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 10
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 11
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 11
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 11
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 11
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 11
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 12
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 12
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 12
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 12
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 12
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 13
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 13
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 13
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 13
         y: 10
-        isValid: 0
-      dataName: Earth
+        isValid: 1
+      dataName: Empty
     - position:
         x: 13
         y: 11
-        isValid: 0
-      dataName: Earth
+        isValid: 1
+      dataName: Empty
     - position:
         x: 13
         y: 12
-        isValid: 1
-      dataName: Earth
+        isValid: 0
+      dataName: Empty
     - position:
         x: 13
         y: 13
         isValid: 0
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 14
-        isValid: 1
-      dataName: Earth
+        isValid: 0
+      dataName: Empty
     - position:
         x: 13
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 13
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 6
         isValid: 1
-      dataName: Earth
+      dataName: Empty
+    - position:
+        x: 14
+        y: 7
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 14
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 14
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 14
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 11
-        isValid: 0
-      dataName: Earth
+        isValid: 1
+      dataName: Empty
     - position:
         x: 14
         y: 12
         isValid: 0
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 13
         isValid: 0
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 14
-        isValid: 1
-      dataName: Earth
+        isValid: 0
+      dataName: Empty
     - position:
         x: 14
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 14
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 6
+        isValid: 1
+      dataName: Empty
+    - position:
+        x: 15
+        y: 7
         isValid: 0
-      dataName: Earth
+      dataName: Path
+    - position:
+        x: 15
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 15
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 15
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 15
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 0
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 1
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 2
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 3
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 4
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 5
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 6
+        isValid: 1
+      dataName: Empty
+    - position:
+        x: 16
+        y: 7
         isValid: 0
-      dataName: Earth
+      dataName: Path
+    - position:
+        x: 16
+        y: 8
+        isValid: 0
+      dataName: Path
+    - position:
+        x: 16
+        y: 9
+        isValid: 0
+      dataName: Path
     - position:
         x: 16
         y: 10
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 11
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 12
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 13
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 14
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 15
         isValid: 1
-      dataName: Earth
+      dataName: Empty
     - position:
         x: 16
         y: 16
         isValid: 1
-      dataName: Earth
+      dataName: Empty
