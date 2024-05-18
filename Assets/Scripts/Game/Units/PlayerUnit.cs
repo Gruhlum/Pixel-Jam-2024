@@ -10,8 +10,9 @@ namespace HexTecGames
         public override void Setup(UnitController unitC, Waypoint waypoint, UnitData data)
         {
             base.Setup(unitC, waypoint, data);
-            transform.position = waypoint.GetEndPosition();
-            targetPosition = transform.position;
+            Vector2 pathPosition = waypoint.GetEndPosition();
+            targetPosition = pathPosition;
+            StartCoroutine(AnimationStart(transform.position, pathPosition));
         }
         public override Vector2 GetNextTargetPosition()
         {
@@ -22,6 +23,20 @@ namespace HexTecGames
             bool result = coll.TryGetComponent(out EnemyUnit playerUnit);
             unit = playerUnit;
             return result;
+        }
+
+        private IEnumerator AnimationStart(Vector2 spawnPoint, Vector2 targetPoint)
+        {
+            allowMoveToTarget = false;
+
+            float timer = 0;
+            while (timer < 1f)
+            {
+                timer += Time.deltaTime * 2;
+                yield return null;
+                transform.position = Vector2.Lerp(spawnPoint, targetPoint, timer);
+            }
+            allowMoveToTarget = true;
         }
     }
 }

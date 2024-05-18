@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d811ccd778175ff4ea7a34c710bc3fba, type: 3}
   m_Name: Path
   m_EditorClassIdentifier: 
-  color: {r: 0.8490566, g: 0.68471414, b: 0.3724635, a: 1}
+  color: {r: 0.8490566, g: 0.68471414, b: 0.3724635, a: 0}
   placementSound: {fileID: 0}
   isReplaceable: 0
   sprite: {fileID: 669960793, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}

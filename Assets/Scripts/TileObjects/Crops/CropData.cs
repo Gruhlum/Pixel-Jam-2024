@@ -35,6 +35,20 @@ namespace HexTecGames
         }
         [SerializeField] private int requiredGrowthTicks;
 
+        public int MaximumDryTicks
+        {
+            get
+            {
+                return maximumDryTicks;
+            }
+            private set
+            {
+                maximumDryTicks = value;
+            }
+        }
+        [SerializeField] private int maximumDryTicks = 12;
+
+
         public int WaterPerTick
         {
             get

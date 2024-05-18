@@ -32,9 +32,9 @@ namespace HexTecGames
 
         public WaterStorage(Coord center, BaseGrid grid, TileData data) : base(center, grid, data)
         {
-            FindBestWaterGroup();
+            //FindBestWaterGroup();
 
-            GameController.OnBeforeTick += GameController_OnBeforeTick;
+            //GameController.OnBeforeTick += GameController_OnBeforeTick;
         }
         public void FindBestWaterGroup()
         {
@@ -90,27 +90,27 @@ namespace HexTecGames
             waterGroup = biggestWaterGroup;
             biggestWaterGroup.Add(this);
         }
-        public override void Remove()
-        {
-            GameController.OnBeforeTick -= GameController_OnBeforeTick;
-            base.Remove();
-        }
-        private void GameController_OnBeforeTick()
-        {
-            if (!HasWater)
-            {
-                return;
-            }
-            GetCropNeighbours();
-            foreach (var crop in cropNeighbours)
-            {
-                if (crop.IsWatered)
-                {
-                    continue;
-                }
-                crop.WaterCrop();
-            }
-        }
+        //public override void Remove()
+        //{
+        //    GameController.OnBeforeTick -= GameController_OnBeforeTick;
+        //    base.Remove();
+        //}
+        //private void GameController_OnBeforeTick()
+        //{
+        //    //if (!HasWater)
+        //    //{
+        //    //    return;
+        //    //}
+        //    //GetCropNeighbours();
+        //    //foreach (var crop in cropNeighbours)
+        //    //{
+        //    //    if (crop.IsWatered)
+        //    //    {
+        //    //        continue;
+        //    //    }
+        //    //    crop.WaterCrop();
+        //    //}
+        //}
 
         protected void GetCropNeighbours()
         {

@@ -12,7 +12,7 @@ namespace HexTecGames
         private int currentTicks;
 
         [SerializeField] private int ticksToSpawn = default;
-
+        [SerializeField] private StatueController statueC = default;
 
         void Awake()
         {
@@ -31,6 +31,14 @@ namespace HexTecGames
             {
                 currentTicks = 0;
                 SpawnUnit(waypointController.GetWaypoint(0), enemyDatas.Random());
+            }
+        }
+        public override void SetupUnit(Unit unit, Waypoint waypoint, UnitData unitData)
+        {
+            base.SetupUnit(unit, waypoint, unitData);
+            if (unit is EnemyUnit enemy)
+            {
+                enemy.StatueController = statueC;
             }
         }
     }

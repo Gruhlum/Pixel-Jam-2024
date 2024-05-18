@@ -15,8 +15,14 @@ namespace HexTecGames
 
         private float timer;
 
+        private bool hasLost;
+
         void FixedUpdate()
         {
+            if (hasLost)
+            {
+                return;
+            }
             timer += Time.deltaTime;
             if (timer >= secondsPerTick)
             {
@@ -25,6 +31,12 @@ namespace HexTecGames
                 OnTick?.Invoke();
                 OnAfterTick?.Invoke();
             }
+        }
+
+        public void GameOver()
+        {
+            hasLost = true;
+            Debug.Log("Game Over");
         }
     }
 }

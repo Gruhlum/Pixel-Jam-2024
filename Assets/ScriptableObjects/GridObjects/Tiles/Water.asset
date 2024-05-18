@@ -156,3 +156,4 @@ MonoBehaviour:
     sprite: {fileID: -1843508787, guid: 9944dc87f9a6beb45bbd5d5060ef5794, type: 3}
   affectedTileDatas:
   - {fileID: 11400000, guid: 1ef6df6fd4f738a4b8e60617e3c6df17, type: 2}
+  waterSourceData: {fileID: 11400000, guid: 1ef6df6fd4f738a4b8e60617e3c6df17, type: 2}

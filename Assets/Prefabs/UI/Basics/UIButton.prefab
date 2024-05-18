@@ -135,12 +135,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876eba2f3d6387f44816fcd8480b54c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjects:
-  - {fileID: 4054352565523360021}
-  startOnEnabled: 0
+  preset: {fileID: 0}
+  targetGOs: []
   tweenDatas:
   - rid: 1859237159600652288
   timeScale: 1
+  startOnEnabled: 0
   deactivateGOsAfterPlay: 0
   onlyPlayOnce: 0
   references:
@@ -175,11 +175,12 @@ MonoBehaviour:
           m_RotationOrder: 4
         Loop: 0
         Repeats: 0
-        Delay: 0
         Speed: 10
+        Delay: 0
+        applyImmediately: 1
+        setStartDataBeforePlay: 0
         reverse: 0
         isEnabled: 1
-        applyImmediately: 1
         X: 1
         Y: 1
         Z: 0

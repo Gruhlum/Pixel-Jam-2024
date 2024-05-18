@@ -3,7 +3,15 @@ TODO:
 
 make crops sellable
 
-Weather
+Weatherdisplay
+
+proper enemies
+
+losing game
+
+winning game?
+
+crops die when dry too long
 
 
 

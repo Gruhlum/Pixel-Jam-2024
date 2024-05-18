@@ -1,12 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace HexTecGames
 {
-	public class StatueController : MonoBehaviour
+	public class StatueController : MonoBehaviour, IHasHealth
 	{
-		[SerializeField] private int StartHealth = default;
+        [SerializeField] private GameController gc = default;
 
         public int CurrentHealth
         {
@@ -16,15 +17,48 @@ namespace HexTecGames
             }
             private set
             {
+                if (value > maximumHealth)
+                {
+                    value = maximumHealth;
+                }
+                if (value == currentHealth)
+                {
+                    return;
+                }
                 currentHealth = value;
+                OnHealthChanged?.Invoke(currentHealth);
             }
         }
         private int currentHealth;
 
+        public int MaximumHealth
+        {
+            get
+            {
+                return maximumHealth;
+            }
+            private set
+            {
+                maximumHealth = value;
+            }
+        }
+        [SerializeField] private int maximumHealth = default;
+        
+
+        public event Action<int> OnHealthChanged;
+
+        void Awake()
+        {
+            CurrentHealth = MaximumHealth;
+        }
 
         public void TakeDamage(int amount)
         {
             CurrentHealth -= amount;
+            if (CurrentHealth <= 0)
+            {
+                gc.GameOver();
+            }
         }
     }
 }

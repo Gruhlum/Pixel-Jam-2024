@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace HexTecGames
 {
-    public abstract class Unit : MonoBehaviour
+    public abstract class Unit : MonoBehaviour, IHasHealth
     {
         public int CurrentHealth
         {
@@ -16,11 +16,12 @@ namespace HexTecGames
             }
             private set
             {
-                if (value > MaxHealth)
+                if (value > MaximumHealth)
                 {
-                    value = MaxHealth;
+                    value = MaximumHealth;
                 }
                 currentHealth = value;
+                OnHealthChanged?.Invoke(currentHealth);
                 if (currentHealth <= 0)
                 {
                     Die();
@@ -29,7 +30,7 @@ namespace HexTecGames
         }
         private int currentHealth;
 
-        public int MaxHealth
+        public int MaximumHealth
         {
             get
             {
@@ -48,9 +49,16 @@ namespace HexTecGames
         private float attackTimer;
 
         public event Action<Unit> OnDied;
+        public event Action<int> OnHealthChanged;
 
-        private void FixedUpdate()
+        protected bool allowMoveToTarget = true;
+
+        protected virtual void FixedUpdate()
         {
+            if (!allowMoveToTarget)
+            {
+                return;
+            }
             if (targetUnit == null)
             {
                 DetectEnemies();
@@ -77,22 +85,31 @@ namespace HexTecGames
                 else targetPosition = GetNextTargetPosition();
             }         
         }
+        public virtual void Setup(UnitController unitC, Waypoint waypoint, UnitData data, Vector2 spawnPoint)
+        {
+            transform.position = spawnPoint;
+            Setup(unitC, waypoint, data);
+        }
         public virtual void Setup(UnitController unitC, Waypoint waypoint, UnitData data)
         {
             this.unitData = data;
             this.unitC = unitC;
             this.path = waypoint;
-            CurrentHealth = MaxHealth;
+            CurrentHealth = MaximumHealth;
         }
         protected abstract bool GetOppositeType(Collider2D coll, out Unit unit);
         private void DetectEnemies()
         {
-            RaycastHit2D hit = Physics2D.CircleCast(transform.position, 1, Vector2.zero);
-            if (hit.collider != null && GetOppositeType(hit.collider, out Unit unit) && unit.path == this.path)
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, Mathf.Max( 1.5f, unitData.Range + 0.5f), Vector2.zero);
+            foreach (var hit in hits)
             {
-                targetUnit = unit;
-                targetUnit.OnDied += TargetUnit_OnDied;
-                attackTimer = 0;
+                if (hit.collider != null && GetOppositeType(hit.collider, out Unit unit) && unit.path == this.path)
+                {
+                    targetUnit = unit;
+                    targetUnit.OnDied += TargetUnit_OnDied;
+                    attackTimer = 0;
+                    return;
+                }
             }
         }
 
@@ -107,7 +124,7 @@ namespace HexTecGames
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
-            Debug.Log("Taking Damage!");
+            //Debug.Log("Taking Damage!");
         }
         public void Heal(int heal)
         {

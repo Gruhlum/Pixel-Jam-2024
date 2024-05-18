@@ -48,9 +48,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6758505115201799855, guid: c3dfc1cfb632a3548949152d9806dd13, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 6767903138763739536, guid: c3dfc1cfb632a3548949152d9806dd13, type: 3}
       propertyPath: m_Name
-      value: TileHighlight Variant
+      value: BuildHighlight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

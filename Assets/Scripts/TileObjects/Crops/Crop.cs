@@ -77,6 +77,20 @@ namespace HexTecGames
 
         public event Action<Crop> OnFullyGrown;
 
+        public WaterController WaterController
+        {
+            get
+            {
+                return waterController;
+            }
+            set
+            {
+                waterController = value;
+            }
+        }
+        private WaterController waterController;
+
+
         public Crop(Coord center, BaseGrid grid, CropData data) : base(center, grid, data)
         {
             CropData = data;
@@ -89,28 +103,43 @@ namespace HexTecGames
             base.Remove();
         }
 
-        public void WaterCrop()
-        {
-            IsWatered = true;
-        }
         private void GameController_OnTick()
         {
-            if (IsWatered)
+            var results = Grid.GetNeighbourTiles<WaterStorage>(Center);
+            if (results.Count <= 0)
             {
-                IncreaseGrowth(1);              
+                IsWatered = false;
+                return;
             }
-            else IncreaseTryTicks();
-
+            if (IsFullyGrown)
+            {
+                return;
+            }
+            if (!waterController.TryToUseWater())
+            {
+                IncreaseDryTicks();
+                IsWatered = false;
+            }
+            else
+            {
+                IncreaseGrowth(1);
+                IsWatered = true;
+            } 
+            
             UpdateSprite();
-            IsWatered = false;
         }
-        private void IncreaseTryTicks()
+        private void IncreaseDryTicks()
         {
             DryTicks++;
+            if (DryTicks > CropData.MaximumDryTicks)
+            {
+                Remove();
+            }
         }
         private void IncreaseGrowth(int amount)
         {
             CurrentGrowthTicks += amount;
+            DryTicks = 0;
             if (IsFullyGrown)
             {
                 return;

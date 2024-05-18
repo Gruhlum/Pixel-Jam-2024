@@ -36,7 +36,7 @@ namespace HexTecGames
             Tile tile = pathC.GetClosestPathTile(crop.Center);
             if (tile != null)
             {
-                SpawnUnit(waypointController.GetClosestWaypoint(crop.GetWorldPosition()), crop.CropData.UnitData);
+                SpawnUnit(waypointController.GetClosestWaypoint(crop.GetWorldPosition()), crop.CropData.UnitData, crop.GetWorldPosition());
                 crop.Remove();
             }
             else fullyGrownCrop.Add(crop);
