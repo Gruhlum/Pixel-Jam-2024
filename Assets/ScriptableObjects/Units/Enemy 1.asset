@@ -17,4 +17,6 @@ MonoBehaviour:
   attackDelay: 3
   range: 1
   moveSpeed: 0.5
-  sprite: {fileID: 21300000, guid: 5a7a8f58382b6e547aa26e7ab4b49c99, type: 3}
+  duration: 24
+  reward: 4
+  sprite: {fileID: 21300000, guid: d926d269297f3a44ebf5eedad8f48fb0, type: 3}

@@ -11,7 +11,7 @@ namespace HexTecGames
 	{
 		[SerializeField] private TMP_Text growGUI = default;
 		[SerializeField] private TMP_Text dryGUI = default;
-		[SerializeField] private TMP_Text sellGUI = default;
+		[SerializeField] private TMP_Text durationGUI = default;
 
 		[SerializeField] private GraphicRaycaster raycaster = default;
         [SerializeField] private GameObject go = default;
@@ -52,9 +52,9 @@ namespace HexTecGames
 
         public void Setup(CropData cropData)
 		{
-			dryGUI.text = cropData.MaximumDryTicks.ToString();
-			growGUI.text = cropData.RequiredGrowthTicks.ToString();
-			sellGUI.text = cropData.UnitData.SellPrice.ToString();
+			dryGUI.text = "<mspace=20>" + cropData.MaximumDryTicks.ToString();
+			growGUI.text = "<mspace=20>" + cropData.RequiredGrowthTicks.ToString();
+			durationGUI.text = "<mspace=20>" + cropData.WaterPerTick.ToString();
 		}
 	}
 }

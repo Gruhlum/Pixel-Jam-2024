@@ -42,6 +42,7 @@ namespace HexTecGames
 
         private void InitSlider()
         {
+            slider.gameObject.SetActive(false);
             slider.maxValue = hasHealth.MaximumHealth;
             slider.value = hasHealth.CurrentHealth;
         }
@@ -68,6 +69,7 @@ namespace HexTecGames
         private void UpdateSlider()
         {
             slider.value = hasHealth.CurrentHealth;
+            slider.gameObject.SetActive(true);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace HexTecGames
         public static event Action OnTick;
         public static event Action OnAfterTick;
 
-        private float timer;
+        private float timer = -3;
 
         private bool hasLost;
 

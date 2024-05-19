@@ -1,6 +1,8 @@
+using HexTecGames.Basics;
 using HexTecGames.GridBaseSystem;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace HexTecGames
@@ -14,6 +16,8 @@ namespace HexTecGames
         [SerializeField] private int ticksToSpawn = default;
         [SerializeField] private StatueController statueC = default;
 
+        [SerializeField] private List<LevelData> levelDatas = default;
+        [SerializeField] private Spawner<WarningSign> warningSpawner = default;
         void Awake()
         {
             GameController.OnTick += GameController_OnTick;
@@ -27,11 +31,21 @@ namespace HexTecGames
         {
             currentTicks++;
 
-            if (currentTicks >= ticksToSpawn)
+            for (int i = 0; i < levelDatas.Count; i++)
             {
-                currentTicks = 0;
-                SpawnUnit(waypointController.GetWaypoint(0), enemyDatas.Random());
+                if (levelDatas[i].timers.Any(x => x == currentTicks + 18))
+                {
+                    SpawnWarningSign(i);
+                }
+                if (levelDatas[i].timers.Any(x => x == currentTicks))
+                {
+                    SpawnUnit(waypointController.GetWaypoint(i), enemyDatas.Random());
+                }
             }
+        }
+        private void SpawnWarningSign(int index)
+        {
+            warningSpawner.Spawn().Setup(waypointController.GetStartPosition(index) + Random.insideUnitCircle);
         }
         public override void SetupUnit(Unit unit, Waypoint waypoint, UnitData unitData)
         {

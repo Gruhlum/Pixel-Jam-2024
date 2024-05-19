@@ -95,7 +95,7 @@ namespace HexTecGames
         {
             CropData = data;
             GameController.OnTick += GameController_OnTick;
-            Sprite = CropData.Sprite;
+            Sprite = FindCorrectSprite();
         }
         public override void Remove()
         {
@@ -115,14 +115,14 @@ namespace HexTecGames
             {
                 return;
             }
-            if (!waterController.TryToUseWater())
+            if (!waterController.TryToUseWater(CropData.WaterPerTick))
             {
                 IncreaseDryTicks();
                 IsWatered = false;
             }
             else
             {
-                IncreaseGrowth(1);
+                IncreaseGrowth(CropData.WaterPerTick);
                 IsWatered = true;
             } 
             
@@ -171,7 +171,7 @@ namespace HexTecGames
         }
         private int GetSpriteIndex()
         {
-            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks)
+            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks - 1)
             {
                 return 2;
             }

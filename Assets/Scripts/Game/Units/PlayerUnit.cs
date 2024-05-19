@@ -7,6 +7,20 @@ namespace HexTecGames
 {
     public class PlayerUnit : Unit
     {
+        public ResourceController ResourceController
+        {
+            get
+            {
+                return resourceController;
+            }
+            set
+            {
+                resourceController = value;
+            }
+        }
+        private ResourceController resourceController;
+
+
         public override void Setup(UnitController unitC, Waypoint waypoint, UnitData data)
         {
             base.Setup(unitC, waypoint, data);

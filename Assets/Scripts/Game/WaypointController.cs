@@ -12,7 +12,10 @@ namespace HexTecGames
 		{
 			return paths[index];
 		}
-
+		public Vector2 GetStartPosition(int index)
+		{
+			return paths[index].GetStartPosition();
+		}
 		public Waypoint GetClosestWaypoint(Vector2 position)
 		{
 			Waypoint closest = null;

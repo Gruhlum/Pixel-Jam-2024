@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c3b78b40e31b2439e3aeef97171fc1, type: 3}
+  m_Name: Pumpkin
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
+  placementSound: {fileID: 11400000, guid: d1726a8662c0a44459907c215889f900, type: 2}
+  sprite: {fileID: 1016528992, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  costs:
+  - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
+    value: 3
+  unitData: {fileID: 11400000, guid: 3c5bcb248009a5546879d5c3b9f4e0b8, type: 2}
+  requiredGrowthTicks: 14
+  maximumDryTicks: 12
+  waterPerTick: 1
+  sprites:
+  - {fileID: 101829994, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: -1683960953, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1016528992, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  drySprites:
+  - {fileID: 1140353703, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 282796816, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1698535481, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  growSound: {fileID: 11400000, guid: c14e9041c917f02428464a506793c033, type: 2}
+  validEarthTiles:
+  - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
+  - {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}

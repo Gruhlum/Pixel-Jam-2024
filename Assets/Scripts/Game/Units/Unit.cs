@@ -8,6 +8,8 @@ namespace HexTecGames
 {
     public abstract class Unit : MonoBehaviour, IHasHealth
     {
+        [SerializeField] private SpriteRenderer sr = default;
+
         public int CurrentHealth
         {
             get
@@ -47,7 +49,7 @@ namespace HexTecGames
         protected Unit targetUnit;
 
         private float attackTimer;
-
+        private float duration;
         public event Action<Unit> OnDied;
         public event Action<int> OnHealthChanged;
 
@@ -55,6 +57,12 @@ namespace HexTecGames
 
         protected virtual void FixedUpdate()
         {
+            duration += Time.deltaTime;
+            sr.flipX = transform.position.x < targetPosition.x;
+            if (duration > unitData.Duration)
+            {
+                gameObject.SetActive(false);
+            }
             if (!allowMoveToTarget)
             {
                 return;
@@ -96,6 +104,7 @@ namespace HexTecGames
             this.unitC = unitC;
             this.path = waypoint;
             CurrentHealth = MaximumHealth;
+            sr.sprite = data.sprite;
         }
         protected abstract bool GetOppositeType(Collider2D coll, out Unit unit);
         private void DetectEnemies()

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
   placementSound: {fileID: 11400000, guid: d1726a8662c0a44459907c215889f900, type: 2}
-  sprite: {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  sprite: {fileID: -173996315, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 3
   unitData: {fileID: 11400000, guid: 2705d763b56e0334e912f92ece158d27, type: 2}
   requiredGrowthTicks: 12
   maximumDryTicks: 12
-  waterPerTick: 2
+  waterPerTick: 1
   sprites:
   - {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: -170439489, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growGUI: {fileID: 9158956492253486159}
   dryGUI: {fileID: 260066313965841403}
-  sellGUI: {fileID: 8478975798507798247}
+  durationGUI: {fileID: 8478975798507798247}
   raycaster: {fileID: 1840785199023095388}
   go: {fileID: 6246400328295819802}
 --- !u!1 &6170398203261381734
@@ -337,6 +337,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ecedcb2d389ba6429cc0cd72bbf5bc4, type: 2}
   - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
   - {fileID: 11400000, guid: 0c0dccf09255a0843a3bc96fa20f6891, type: 2}
+  - {fileID: 11400000, guid: 491ce4b51bc75d14290b914142c85a93, type: 2}
+  - {fileID: 11400000, guid: 3e88a29442373ff4c9c83cb7e5537f0b, type: 2}
   gridPlacementController: {fileID: 0}
 --- !u!114 &7197418025464881581
 MonoBehaviour:
@@ -548,7 +550,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3840444716818592496, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_Name
-      value: Sell
+      value: Duration
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991436498674689702, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
+      propertyPath: m_text
+      value: <mspace=18> 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991436498674689702, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6991436498674689702, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -580,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242825421118366305, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_text
-      value: Sell
+      value: Duration
       objectReference: {fileID: 0}
     - target: {fileID: 8242825421118366305, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1146,6 +1156,14 @@ PrefabInstance:
       propertyPath: m_MinHeight
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8193110113319672251, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
     m_RemovedGameObjects: []
@@ -1279,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3840444716818592496, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_Name
-      value: Dry
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 6991436498674689702, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1311,7 +1329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242825421118366305, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_text
-      value: Wither
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 8242825421118366305, guid: a1968d955597fe64ba12e263dd34b5b9, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1402,6 +1420,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 544121799, guid: 3f9e8c07e04f1974ab736a66fd76009a, type: 3}
+    - target: {fileID: 2719335934999346793, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2791777317187436096, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1532,6 +1554,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
       propertyPath: m_MinHeight
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredHeight
       value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1730,6 +1760,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
       propertyPath: m_MinHeight
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405504805494592991, guid: e92978ccff163cd45b5ce2c90e89392e, type: 3}
+      propertyPath: m_PreferredHeight
       value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -14,20 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
   placementSound: {fileID: 11400000, guid: d1726a8662c0a44459907c215889f900, type: 2}
-  sprite: {fileID: 0}
+  sprite: {fileID: 1495182501, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 4
-  unitData: {fileID: 0}
+  unitData: {fileID: 11400000, guid: 4a3f0c5f931ac0c41942b8c586420fef, type: 2}
   requiredGrowthTicks: 8
-  waterPerTick: 2
+  maximumDryTicks: 12
+  waterPerTick: 1
   sprites:
-  - {fileID: 1140353703, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
-  - {fileID: 282796816, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
-  - {fileID: 1698535481, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1801087611, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1612241611, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1495182501, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   drySprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  earthTileData: {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}
+  - {fileID: -1167805125, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 715457860, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
+  - {fileID: 1236203474, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   growSound: {fileID: 11400000, guid: c14e9041c917f02428464a506793c033, type: 2}
+  validEarthTiles:
+  - {fileID: 11400000, guid: da1b4042c27ea294c9db5b6e51a096f8, type: 2}
+  - {fileID: 11400000, guid: bda2bcd04f5acf948bb8bbfcf7108d5b, type: 2}

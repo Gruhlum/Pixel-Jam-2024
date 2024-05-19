@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 032530fdddbb86d4d8ae40c44a449c42, type: 3}
-  m_Name: Music 1
+  m_Script: {fileID: 11500000, guid: dd06b9ad100f1a54b9921266894528d3, type: 3}
+  m_Name: PumpkinUnit
   m_EditorClassIdentifier: 
-  volume: 0.5
-  pitch: 1
-  delay: 0
-  fadeIn: 0
-  loop: 0
-  audioMixerGroup: {fileID: -4053053285174291975, guid: af2cf67e55c3f3e469a1171858c09de8, type: 2}
-  audioClip: {fileID: 0}
+  maxHealth: 75
+  damage: 8
+  attackDelay: 3
+  range: 1
+  moveSpeed: 0.5
+  duration: 60
+  reward: 4
+  sprite: {fileID: -70518289, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

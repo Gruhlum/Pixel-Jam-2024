@@ -19,8 +19,19 @@ namespace HexTecGames
 
         public void Setup(Unit unit)
         {
+            if (this.target != null)
+            {
+                target.OnDied -= Target_OnDied;
+            }
             base.Setup(unit);
             this.target = unit;
+            target.OnDied += Target_OnDied;
+        }
+
+        private void Target_OnDied(Unit obj)
+        {
+            target.OnDied -= Target_OnDied;
+            gameObject.SetActive(false);
         }
     }
 }

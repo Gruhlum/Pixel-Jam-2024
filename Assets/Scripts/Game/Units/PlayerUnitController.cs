@@ -8,7 +8,7 @@ namespace HexTecGames
     public class PlayerUnitController : UnitController
     {
         [SerializeField] private BaseGrid farmGrid = default;
-
+        [SerializeField] private ResourceController resourceC = default;
         private List<Crop> crops = new List<Crop>();
 
         private List<Crop> fullyGrownCrop = new List<Crop>();
@@ -50,7 +50,14 @@ namespace HexTecGames
                 crop.OnFullyGrown -= Crop_OnFullyGrown;
                 crops.Remove(crop);
             }
-
+        }
+        public override void SetupUnit(Unit unit, Waypoint waypoint, UnitData unitData)
+        {
+            base.SetupUnit(unit, waypoint, unitData);
+            if (unit is PlayerUnit playerUnit)
+            {
+                playerUnit.ResourceController = resourceC;
+            }
         }
     }
 }

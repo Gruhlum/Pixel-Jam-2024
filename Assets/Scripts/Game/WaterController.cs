@@ -120,13 +120,13 @@ namespace HexTecGames
             waterMat.SetFloat("_percent", Mathf.Lerp(0.54f, 0f, currentWater / 50f));
         }
 
-        public bool TryToUseWater()
+        public bool TryToUseWater(int amount)
         {
-            if (currentWater <= 0)
+            if (currentWater < amount)
             {
                 return false;
             }
-            currentWater--;
+            currentWater -= amount;
             return true;
         }
 
