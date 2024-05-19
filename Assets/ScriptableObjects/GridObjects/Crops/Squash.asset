@@ -17,11 +17,11 @@ MonoBehaviour:
   sprite: {fileID: 1495182501, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   costs:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
-    value: 4
+    value: 3
   unitData: {fileID: 11400000, guid: 4a3f0c5f931ac0c41942b8c586420fef, type: 2}
-  requiredGrowthTicks: 8
+  requiredGrowthTicks: 7
   maximumDryTicks: 12
-  waterPerTick: 1
+  waterPerTick: 2
   sprites:
   - {fileID: 1801087611, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: 1612241611, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

@@ -30,7 +30,19 @@ namespace HexTecGames
         private void GameController_OnTick()
         {
             currentTicks++;
-
+            int frequency = 10 - (currentTicks / 60);
+            if (currentTicks > 170 && currentTicks % frequency == 0)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    SpawnWarningSign(i);
+                    if (currentTicks > 190)
+                    {
+                        SpawnUnit(waypointController.GetWaypoint(i), enemyDatas.Random());
+                    }
+                }
+                
+            }
             for (int i = 0; i < levelDatas.Count; i++)
             {
                 if (levelDatas[i].timers.Any(x => x == currentTicks + 18))

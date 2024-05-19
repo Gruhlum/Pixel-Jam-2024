@@ -52,9 +52,9 @@ namespace HexTecGames
 
         public void Setup(CropData cropData)
 		{
-			dryGUI.text = "<mspace=20>" + cropData.MaximumDryTicks.ToString();
+			dryGUI.text = "<mspace=20>" + cropData.WaterPerTick.ToString();
 			growGUI.text = "<mspace=20>" + cropData.RequiredGrowthTicks.ToString();
-			durationGUI.text = "<mspace=20>" + cropData.WaterPerTick.ToString();
+			durationGUI.text = "<mspace=20>" + cropData.UnitData.Duration.ToString();
 		}
 	}
 }

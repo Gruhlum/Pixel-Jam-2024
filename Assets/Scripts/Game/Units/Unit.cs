@@ -58,7 +58,12 @@ namespace HexTecGames
         protected virtual void FixedUpdate()
         {
             duration += Time.deltaTime;
-            sr.flipX = transform.position.x < targetPosition.x;
+            attackTimer += Time.deltaTime;
+            if (targetUnit != null)
+            {
+                sr.flipX = transform.position.x < targetUnit.transform.position.x;
+            }
+            else sr.flipX = transform.position.x < targetPosition.x;
             if (duration > unitData.Duration)
             {
                 gameObject.SetActive(false);
@@ -77,7 +82,6 @@ namespace HexTecGames
                 {
                     transform.position = Vector2.MoveTowards(transform.position, targetUnit.transform.position, unitData.MoveSpeed * Time.deltaTime);
                 }
-                attackTimer += Time.deltaTime;
                 if (attackTimer > unitData.AttackDelay)
                 {
                     attackTimer = 0;
@@ -116,7 +120,6 @@ namespace HexTecGames
                 {
                     targetUnit = unit;
                     targetUnit.OnDied += TargetUnit_OnDied;
-                    attackTimer = 0;
                     return;
                 }
             }

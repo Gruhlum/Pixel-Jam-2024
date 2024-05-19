@@ -8,6 +8,7 @@ namespace HexTecGames
 	public class GameController : MonoBehaviour
     {
         [SerializeField] private int secondsPerTick = 4;
+        [SerializeField] private EndScreen endScreen = default;
 
         public static event Action OnBeforeTick;
         public static event Action OnTick;
@@ -36,7 +37,7 @@ namespace HexTecGames
         public void GameOver()
         {
             hasLost = true;
-            Debug.Log("Game Over");
+            endScreen.Setup(Time.timeSinceLevelLoad.ToString("#00:00"));
         }
     }
 }

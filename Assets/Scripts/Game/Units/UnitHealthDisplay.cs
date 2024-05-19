@@ -31,7 +31,9 @@ namespace HexTecGames
         private void Target_OnDied(Unit obj)
         {
             target.OnDied -= Target_OnDied;
+            target = null;
             gameObject.SetActive(false);
+            Debug.Log("here");
         }
     }
 }

@@ -29,6 +29,10 @@ namespace HexTecGames
         [SerializeField] private int defaultBalance = 4;
         private int lastBalance;
         [SerializeField] private Material waterMat = default;
+
+        private float targetValue;
+        private float currentValue;
+
         void Awake()
         {
             grid.OnTileAdded += Grid_OnTileAdded;
@@ -112,12 +116,15 @@ namespace HexTecGames
         void FixedUpdate()
         {
             ChangeMaterial();
+
         }
 
 
         public void ChangeMaterial()
         {
-            waterMat.SetFloat("_percent", Mathf.Lerp(0.54f, 0f, currentWater / 50f));
+            currentValue = Mathf.Lerp(0.56f, 0f, currentWater / (float)(maximumWater));
+            targetValue = Mathf.Lerp(targetValue, currentValue, 0.1f);
+            waterMat.SetFloat("_percent", targetValue);
         }
 
         public bool TryToUseWater(int amount)
@@ -138,7 +145,7 @@ namespace HexTecGames
             if (obj is Crop crop)
             {
                 crops.Remove(crop);
-                
+
             }
         }
 

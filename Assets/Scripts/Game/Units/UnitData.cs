@@ -86,19 +86,6 @@ namespace HexTecGames
         }
         [SerializeField] private int duration = 24;
 
-        public int SellPrice
-        {
-            get
-            {
-                return reward;
-            }
-            private set
-            {
-                reward = value;
-            }
-        }
-        [SerializeField] private int reward = 4;
-
 
         public Sprite sprite;
     }

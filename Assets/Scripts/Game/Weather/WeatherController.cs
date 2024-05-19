@@ -35,7 +35,7 @@ namespace HexTecGames
 
         void Awake()
         {
-            GameController.OnTick += GameController_OnTick;
+            //GameController.OnTick += GameController_OnTick;
             SetWeather(2);
         }
 

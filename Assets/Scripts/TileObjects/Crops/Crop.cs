@@ -171,7 +171,7 @@ namespace HexTecGames
         }
         private int GetSpriteIndex()
         {
-            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks - 1)
+            if (CurrentGrowthTicks >= CropData.RequiredGrowthTicks)
             {
                 return 2;
             }
