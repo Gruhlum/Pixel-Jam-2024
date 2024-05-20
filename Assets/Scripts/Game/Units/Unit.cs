@@ -57,7 +57,7 @@ namespace HexTecGames
 
         protected virtual void FixedUpdate()
         {
-            duration += Time.deltaTime;
+            //duration += Time.deltaTime;
             attackTimer += Time.deltaTime;
             if (targetUnit != null)
             {
@@ -66,7 +66,7 @@ namespace HexTecGames
             else sr.flipX = transform.position.x < targetPosition.x;
             if (duration > unitData.Duration)
             {
-                gameObject.SetActive(false);
+                CurrentHealth = 0;
             }
             if (!allowMoveToTarget)
             {
@@ -82,7 +82,7 @@ namespace HexTecGames
                 {
                     transform.position = Vector2.MoveTowards(transform.position, targetUnit.transform.position, unitData.MoveSpeed * Time.deltaTime);
                 }
-                if (attackTimer > unitData.AttackDelay)
+                else if (attackTimer > unitData.AttackDelay)
                 {
                     attackTimer = 0;
                     targetUnit.TakeDamage(unitData.Damage);
@@ -109,6 +109,7 @@ namespace HexTecGames
             this.path = waypoint;
             CurrentHealth = MaximumHealth;
             sr.sprite = data.sprite;
+            duration = 0;
         }
         protected abstract bool GetOppositeType(Collider2D coll, out Unit unit);
         private void DetectEnemies()
@@ -146,6 +147,12 @@ namespace HexTecGames
         {
             OnDied?.Invoke(this);
             gameObject.SetActive(false);
+            if (targetUnit != null)
+            {
+                targetUnit.OnDied -= TargetUnit_OnDied;
+                targetUnit = null;
+            }
+            
         }
     }
 }

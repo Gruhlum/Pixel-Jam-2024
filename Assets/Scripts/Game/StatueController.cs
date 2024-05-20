@@ -1,3 +1,4 @@
+using HexTecGames.SoundSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,6 +32,8 @@ namespace HexTecGames
         }
         private int currentHealth;
 
+        [SerializeField] private SoundClipGroup takeDamageSound = default;
+
         public int MaximumHealth
         {
             get
@@ -55,6 +58,7 @@ namespace HexTecGames
         public void TakeDamage(int amount)
         {
             CurrentHealth -= amount;
+            takeDamageSound?.Play();
             if (CurrentHealth <= 0)
             {
                 gc.GameOver();

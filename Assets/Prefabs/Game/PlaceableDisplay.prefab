@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 908592057390376365}
   - component: {fileID: 7688481225796380414}
   - component: {fileID: 6246474350791453670}
+  - component: {fileID: -6831504244982096385}
+  - component: {fileID: 5883446456103413852}
   m_Layer: 5
   m_Name: PlaceableDisplay
   m_TagString: Untagged
@@ -149,7 +151,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7890241, g: 1, b: 0.759434, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -184,6 +186,87 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-6831504244982096385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719150124253512993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2572151263f6f04a839cebc9f46f207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickClip: {fileID: 11400000, guid: 8139ab2e976b85d4f9f5f91245827335, type: 2}
+  hoverEnterClip: {fileID: 11400000, guid: 050699313f7b88e41af5f857a1d26dfd, type: 2}
+  hoverExitClip: {fileID: 0}
+  btn: {fileID: 6246474350791453670}
+  playWhenDisabled: 0
+--- !u!114 &5883446456103413852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719150124253512993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876eba2f3d6387f44816fcd8480b54c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preset: {fileID: 0}
+  targetGOs:
+  - {fileID: 2719150124253512993}
+  tweenDatas:
+  - rid: 6437012107972313088
+  timeScale: 1
+  startOnEnabled: 0
+  deactivateGOsAfterPlay: 0
+  onlyPlayOnce: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6437012107972313088
+      type: {class: ScaleTweenData, ns: HexTecGames.TweenLib, asm: HexTecGames.TweenLib}
+      data:
+        animationCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        Loop: 0
+        Repeats: 0
+        Speed: 12
+        Delay: 0
+        applyImmediately: 1
+        setStartDataBeforePlay: 0
+        reverse: 0
+        isEnabled: 1
+        X: 1
+        Y: 1
+        Z: 0
+        Mode: 0
+        strength: 0.04
 --- !u!1 &6092089770697036455
 GameObject:
   m_ObjectHideFlags: 0

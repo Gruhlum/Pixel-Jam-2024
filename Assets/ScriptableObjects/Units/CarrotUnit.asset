@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: CarrotUnit
   m_EditorClassIdentifier: 
   maxHealth: 50
-  damage: 10
-  attackDelay: 3
+  damage: 3
+  attackDelay: 1
   range: 1
   moveSpeed: 0.5
   duration: 34
-  reward: 4
   sprite: {fileID: -173996315, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

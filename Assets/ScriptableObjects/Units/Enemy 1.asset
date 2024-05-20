@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Enemy 1
   m_EditorClassIdentifier: 
   maxHealth: 50
-  damage: 10
-  attackDelay: 3
+  damage: 3
+  attackDelay: 1
   range: 1
   moveSpeed: 0.5
-  duration: 24
-  reward: 4
+  duration: 999
   sprite: {fileID: 21300000, guid: d926d269297f3a44ebf5eedad8f48fb0, type: 3}

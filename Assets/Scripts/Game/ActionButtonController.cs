@@ -50,7 +50,7 @@ namespace HexTecGames
                 {
                     if (selectedBtn is SellButton)
                     {
-                        gold.Value += 4;
+                        gold.Value += crop.CropData.sellPrice;
                         sellSound?.Play();
                     }
                     else
@@ -62,9 +62,19 @@ namespace HexTecGames
                 }
             }
         }
-        private void GridEventSys_OnMouseHoverCoordChanged(Coord obj)
+        private void GridEventSys_OnMouseHoverCoordChanged(Coord coord)
         {
-            mouseCoord = obj;
+            mouseCoord = coord;
+            //Tile t = grid.GetTile(coord);
+            //TileObject obj = grid.GetTileObject(coord);
+            //if (t != null)
+            //{
+            //    Debug.Log(t.Data.Name);
+            //}
+            //if (obj != null)
+            //{
+            //    Debug.Log(obj.Data.Name);
+            //}
         }
         private void GridPlacementC_OnSelectedObjectChanged(GridObjectData obj)
         {

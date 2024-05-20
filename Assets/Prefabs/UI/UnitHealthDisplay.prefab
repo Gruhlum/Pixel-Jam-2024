@@ -326,4 +326,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 4741782012408617113}
   mono: {fileID: 0}
-  offset: {x: 0, y: 0.45, z: 0}
+  offset: {x: 0, y: 0.5, z: 0}

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032530fdddbb86d4d8ae40c44a449c42, type: 3}
   m_Name: ButtonClick
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: b4e1cdd049ba5094eb9792e384511fa4, type: 3}
+  audioClip: {fileID: 8300000, guid: bba99715fe5ae764b80a60f6952345ae, type: 3}
   volume:
-    mode: 1
-    flat: 0.85
+    mode: 0
+    flat: 1
     range: {x: 0.8333334, y: 1}
     sliderMin: 0
     sliderMax: 1
   pitch:
     mode: 0
-    flat: 0.73
+    flat: 1
     range: {x: 0.8, y: 1.2}
     sliderMin: -3
     sliderMax: 3

@@ -33,7 +33,6 @@ namespace HexTecGames
             target.OnDied -= Target_OnDied;
             target = null;
             gameObject.SetActive(false);
-            Debug.Log("here");
         }
     }
 }

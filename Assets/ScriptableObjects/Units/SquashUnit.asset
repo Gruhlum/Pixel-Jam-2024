@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd06b9ad100f1a54b9921266894528d3, type: 3}
   m_Name: SquashUnit
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  damage: 10
-  attackDelay: 3
+  maxHealth: 44
+  damage: 3
+  attackDelay: 1
   range: 1
   moveSpeed: 0.5
-  duration: 26
-  reward: 4
+  duration: 32
   sprite: {fileID: 1495182501, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

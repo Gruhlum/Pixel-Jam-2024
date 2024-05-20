@@ -1108,7 +1108,7 @@ MonoBehaviour:
         x: 12
         y: 14
         isValid: 1
-      dataName: Empty
+      dataName: Earth
     - position:
         x: 12
         y: 15

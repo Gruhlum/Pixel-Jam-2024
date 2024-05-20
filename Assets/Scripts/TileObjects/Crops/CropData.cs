@@ -62,6 +62,7 @@ namespace HexTecGames
         }
         [SerializeField] private int waterPerTick;
 
+        public int sellPrice = 4;
 
         public override bool IsDraggable
         {

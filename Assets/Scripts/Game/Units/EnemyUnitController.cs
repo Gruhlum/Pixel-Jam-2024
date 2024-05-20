@@ -1,5 +1,6 @@
 using HexTecGames.Basics;
 using HexTecGames.GridBaseSystem;
+using HexTecGames.SoundSystem;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,12 @@ namespace HexTecGames
 
         [SerializeField] private List<LevelData> levelDatas = default;
         [SerializeField] private Spawner<WarningSign> warningSpawner = default;
+
+        [SerializeField] private ResourceType goldType = default;
+        [SerializeField] private ResourceController resourceC = default;
+
+        [SerializeField] private SoundClipBase goldGainSound = default;
+
         void Awake()
         {
             GameController.OnTick += GameController_OnTick;
@@ -31,12 +38,12 @@ namespace HexTecGames
         {
             currentTicks++;
             int frequency = 10 - (currentTicks / 60);
-            if (currentTicks > 170 && currentTicks % frequency == 0)
+            if (currentTicks > 280 && currentTicks % frequency == 0)
             {
                 for (int i = 0; i < 4; i++)
                 {
                     SpawnWarningSign(i);
-                    if (currentTicks > 190)
+                    if (currentTicks > 300)
                     {
                         SpawnUnit(waypointController.GetWaypoint(i), enemyDatas.Random());
                     }
@@ -65,7 +72,23 @@ namespace HexTecGames
             if (unit is EnemyUnit enemy)
             {
                 enemy.StatueController = statueC;
+                unit.OnDied += Unit_OnDied;
             }
+        }
+
+        private void Unit_OnDied(Unit unit)
+        {
+            unit.OnDied -= Unit_OnDied;
+            //GainGold();
+            
+        }
+
+        private void GainGold()
+        {
+            var results = resourceC.GetResources();
+            var gold = results.Find(x => x.Data == goldType);
+            gold.Value += 3;
+            goldGainSound?.Play();
         }
     }
 }

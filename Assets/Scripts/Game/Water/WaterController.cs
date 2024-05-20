@@ -19,6 +19,8 @@ namespace HexTecGames
 
         [SerializeField] private Spawner<WaterDisplay> waterDisplaySpawner = default;
 
+        [SerializeField] private ResourceController resourceC = default;
+        [SerializeField] private ResourceType goldType = default;
         [SerializeField] private Resource waterBalance = default;
         [SerializeField] private int maximumWater = default;
         [SerializeField] private int currentWater = default;
@@ -26,12 +28,14 @@ namespace HexTecGames
 
         private List<Crop> crops = new List<Crop>();
 
-        [SerializeField] private int defaultBalance = 4;
         private int lastBalance;
         [SerializeField] private Material waterMat = default;
 
         private float targetValue;
         private float currentValue;
+
+        private int waterGain = 4;
+        private int trenchAmount = 0;
 
         void Awake()
         {
@@ -42,7 +46,7 @@ namespace HexTecGames
             //grid.OnGridGenerated += Grid_OnGridGenerated;
             WeatherController.OnWeatherChanged += WeatherController_OnWeatherChanged;
             GameController.OnBeforeTick += GameController_OnBeforeTick;
-
+            lastBalance = currentWater;
             waterDisplay.SetText($"{currentWater}/{maximumWater}");
         }
 
@@ -50,30 +54,6 @@ namespace HexTecGames
         {
             waterBalance.OnValidate();
         }
-
-        //private void Grid_OnGridGenerated()
-        //{
-        //    List<WaterSource> waterSources = grid.GetAllTiles<WaterSource>();
-        //    if (waterSources.Count == 0)
-        //    {
-        //        Debug.Log("No Watersources in Scene!");
-        //        return;
-        //    }
-        //    corners = new List<Tile>();
-        //    int minX = waterSources.Min(x => x.X);
-        //    int maxX = waterSources.Max(x => x.X);
-        //    int minY = waterSources.Min(x => x.Y);
-        //    int maxY = waterSources.Max(x => x.Y);
-        //    corners.Add(waterSources.Find(t => t.X == minX && t.Y == minY));
-        //    corners.Add(waterSources.Find(t => t.X == maxX && t.Y == minY));
-        //    corners.Add(waterSources.Find(t => t.X == minX && t.Y == maxY));
-        //    corners.Add(waterSources.Find(t => t.X == maxX && t.Y == maxY));
-
-        //    foreach (var waterSource in waterSources)
-        //    {
-        //        waterSource.FindBestWaterGroup();
-        //    }
-        //}
 
         void OnDestroy()
         {
@@ -85,10 +65,18 @@ namespace HexTecGames
             WeatherController.OnWeatherChanged -= WeatherController_OnWeatherChanged;
             GameController.OnBeforeTick -= GameController_OnBeforeTick;
         }
-
+        public void BuyWaterProduction()
+        {
+            Resource gold = resourceC.GetResources().Find(x => x.Data == goldType);
+            if (gold.Value >= 5)
+            {
+                gold.Value -= 5;
+                waterGain += 1;
+            }
+        }
         private void GameController_OnBeforeTick()
         {
-            currentWater += defaultBalance + weatherController.WeatherType.RangeChange;
+            currentWater += waterGain - trenchAmount / 4;
             waterBalance.Value = currentWater - lastBalance;
             lastBalance = currentWater;
             currentWater = Mathf.Clamp(currentWater, 0, maximumWater);
@@ -101,6 +89,7 @@ namespace HexTecGames
             {
                 maximumWater -= 4;
                 waterDisplay.SetText($"{currentWater}/{maximumWater}");
+                trenchAmount--;
             }
         }
 
@@ -110,6 +99,7 @@ namespace HexTecGames
             {
                 maximumWater += 4;
                 waterDisplay.SetText($"{currentWater}/{maximumWater}");
+                trenchAmount++;
             }
         }
 

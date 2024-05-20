@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd06b9ad100f1a54b9921266894528d3, type: 3}
   m_Name: PumpkinUnit
   m_EditorClassIdentifier: 
-  maxHealth: 75
-  damage: 8
-  attackDelay: 3
+  maxHealth: 72
+  damage: 3
+  attackDelay: 1
   range: 1
   moveSpeed: 0.5
   duration: 60
-  reward: 4
   sprite: {fileID: -70518289, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}

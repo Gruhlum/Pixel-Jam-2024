@@ -117,7 +117,7 @@ namespace HexTecGames
             }
             if (!waterController.TryToUseWater(CropData.WaterPerTick))
             {
-                IncreaseDryTicks();
+                //IncreaseDryTicks();
                 IsWatered = false;
             }
             else
@@ -139,7 +139,7 @@ namespace HexTecGames
         private void IncreaseGrowth(int amount)
         {
             CurrentGrowthTicks += amount;
-            DryTicks = 0;
+            //DryTicks = 0;
             if (IsFullyGrown)
             {
                 return;
