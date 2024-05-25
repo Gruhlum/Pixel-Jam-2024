@@ -22,13 +22,14 @@ namespace HexTecGames
 
         private float coreAttackTimer;
 
-        public override void Setup(UnitController unitC, Waypoint waypoint, UnitData data)
+        void OnEnable()
         {
-            base.Setup(unitC, waypoint, data);
-            transform.position = waypoint.GetStartPosition() + Random.insideUnitCircle;
-            targetPosition = waypoint.GetEndPosition() + Random.insideUnitCircle;
+            GameController.OnGameOver += GameController_OnGameOver;
         }
-
+        void OnDisable()
+        {
+            GameController.OnGameOver -= GameController_OnGameOver;
+        }
         protected override void FixedUpdate()
         {
             base.FixedUpdate();
@@ -42,6 +43,19 @@ namespace HexTecGames
                 }
             }
         }
+
+        public override void Setup(UnitController unitC, Waypoint waypoint, UnitData data)
+        {
+            base.Setup(unitC, waypoint, data);
+            transform.position = waypoint.GetStartPosition() + Random.insideUnitCircle;
+            targetPosition = waypoint.GetEndPosition() + Random.insideUnitCircle;
+        }
+      
+        private void GameController_OnGameOver()
+        {
+            gameObject.SetActive(false);
+        }
+        
         public override Vector2 GetNextTargetPosition()
         {
             return path.GetEndPosition();
