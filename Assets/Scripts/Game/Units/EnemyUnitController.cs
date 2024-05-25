@@ -37,8 +37,8 @@ namespace HexTecGames
         private void GameController_OnTick()
         {
             currentTicks++;
-            int frequency = 10 - (currentTicks / 60);
-            if (currentTicks > 280 && currentTicks % frequency == 0)
+            int frequency = 12 - (currentTicks / 60);
+            if (currentTicks > 290 && currentTicks % frequency == 0)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -52,7 +52,7 @@ namespace HexTecGames
             }
             for (int i = 0; i < levelDatas.Count; i++)
             {
-                if (levelDatas[i].timers.Any(x => x == currentTicks + 18))
+                if (levelDatas[i].timers.Any(x => x == currentTicks + 10))
                 {
                     SpawnWarningSign(i);
                 }

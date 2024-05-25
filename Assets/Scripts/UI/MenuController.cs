@@ -8,6 +8,14 @@ namespace HexTecGames
 {
 	public class MenuController : MonoBehaviour
 	{
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartGame();
+            }
+        }
+
         public void StartGame()
         {
             SceneManager.LoadScene("MainScene");

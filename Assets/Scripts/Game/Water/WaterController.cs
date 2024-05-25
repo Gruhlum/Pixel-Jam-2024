@@ -65,18 +65,14 @@ namespace HexTecGames
             WeatherController.OnWeatherChanged -= WeatherController_OnWeatherChanged;
             GameController.OnBeforeTick -= GameController_OnBeforeTick;
         }
-        public void BuyWaterProduction()
+        public void IncreaseWaterProduction()
         {
-            Resource gold = resourceC.GetResources().Find(x => x.Data == goldType);
-            if (gold.Value >= 5)
-            {
-                gold.Value -= 5;
-                waterGain += 1;
-            }
+            waterGain++;
         }
+
         private void GameController_OnBeforeTick()
         {
-            currentWater += waterGain - trenchAmount / 4;
+            currentWater += waterGain;
             waterBalance.Value = currentWater - lastBalance;
             lastBalance = currentWater;
             currentWater = Mathf.Clamp(currentWater, 0, maximumWater);

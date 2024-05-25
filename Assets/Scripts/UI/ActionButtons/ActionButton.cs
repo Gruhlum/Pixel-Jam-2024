@@ -7,8 +7,8 @@ namespace HexTecGames
 {
 	public abstract class ActionButton : MonoBehaviour
 	{
-		[SerializeField] private Sprite normalSprite = default;
-		[SerializeField] private Sprite activeSprite = default;
+		[SerializeField] private Color normalColor = default;
+		[SerializeField] private Color activeColor = default;
 
         [SerializeField] private Image img = default;
 
@@ -22,11 +22,9 @@ namespace HexTecGames
             set
             {
                 isSelected = value;
-                img.sprite = isSelected ? activeSprite : normalSprite;
+                img.color = isSelected ? activeColor : normalColor;
             }
         }
         private bool isSelected;
-
-
     }
 }

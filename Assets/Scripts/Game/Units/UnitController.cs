@@ -9,8 +9,7 @@ namespace HexTecGames
 	public abstract class UnitController : MonoBehaviour
 	{
 		[SerializeField] private Spawner<Unit> unitSpawner = default;
-		[SerializeField] protected PathController pathC = default;
-		[SerializeField] protected BaseGrid pathGrid = default;
+		[SerializeField] protected BaseGrid grid = default;
 		[SerializeField] protected WaypointController waypointController = default;
 		[SerializeField] private Spawner<UnitHealthDisplay> healthDisplaySpawner = default;
 

@@ -1,3 +1,4 @@
+using HexTecGames.GridBaseSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,9 @@ namespace HexTecGames
         [SerializeField] private GameObject winScreen = default;
         [SerializeField] private TMP_Text survivalTimer = default;
 
+        [SerializeField] private ResourceValue gold = default;
+        [SerializeField] private ResourceController resourceC = default;
+
         public static event Action OnBeforeTick;
         public static event Action OnTick;
         public static event Action OnAfterTick;
@@ -23,6 +27,13 @@ namespace HexTecGames
         private int seconds = 59;
         private bool gameOver;
 
+        private int totalTicks;
+
+        void Start()
+        {
+            gold = resourceC.GetResource(gold);
+        }
+
         void FixedUpdate()
         {
             if (gameOver)
@@ -32,10 +43,18 @@ namespace HexTecGames
             timer += Time.deltaTime;
             if (timer >= secondsPerTick)
             {
+                
+                totalTicks++;
                 timer -= secondsPerTick;
                 OnBeforeTick?.Invoke();
                 OnTick?.Invoke();
                 OnAfterTick?.Invoke();
+
+                if (totalTicks % 4 == 0)
+                {
+                    gold.Value++;
+                }
+
                 seconds--;
                 if (seconds < 0)
                 {

@@ -122,7 +122,7 @@ namespace HexTecGames
             }
             else
             {
-                IncreaseGrowth(CropData.WaterPerTick);
+                IncreaseGrowth();
                 IsWatered = true;
             } 
             
@@ -136,9 +136,9 @@ namespace HexTecGames
                 Remove();
             }
         }
-        private void IncreaseGrowth(int amount)
+        private void IncreaseGrowth()
         {
-            CurrentGrowthTicks += amount;
+            CurrentGrowthTicks++;
             //DryTicks = 0;
             if (IsFullyGrown)
             {

@@ -22,7 +22,7 @@ namespace HexTecGames
         }
         private void Grid_OnGridGenerated()
         {
-            CalculatePaths();
+            //CalculatePaths();
         }
 
         public Tile GetPathStartTile(int pathIndex)
@@ -53,13 +53,13 @@ namespace HexTecGames
             Debug.Log("Shouldn't happen!");
             return null;
         }
-        private void CalculatePaths()
-        {
-            var results = grid.GetAllConnectedCoords();
-            foreach (var result in results)
-            {
-                paths.Add(new Path(grid, grid.GetTiles(result), grid.Center));
-            }
-        }
+        //private void CalculatePaths()
+        //{
+        //    var results = grid.GetAllConnectedCoords();
+        //    foreach (var result in results)
+        //    {
+        //        paths.Add(new Path(grid, grid.GetTiles(result), grid.Center));
+        //    }
+        //}
     }
 }

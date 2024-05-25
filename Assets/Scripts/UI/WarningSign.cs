@@ -11,7 +11,7 @@ namespace HexTecGames
         void Update()
         {
             timer += Time.deltaTime;
-            if (timer >= 18)
+            if (timer >= 10)
             {
                 gameObject.SetActive(false);
             }

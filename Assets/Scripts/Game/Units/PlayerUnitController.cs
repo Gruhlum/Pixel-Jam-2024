@@ -7,11 +7,7 @@ namespace HexTecGames
 {
     public class PlayerUnitController : UnitController
     {
-        [SerializeField] private BaseGrid farmGrid = default;
         [SerializeField] private ResourceController resourceC = default;
-        //private List<Crop> crops = new List<Crop>();
-
-        //private List<Crop> fullyGrownCrop = new List<Crop>();
 
         void Awake()
         {
@@ -32,10 +28,10 @@ namespace HexTecGames
 
         public void SetupUnit(Crop crop)
         {
-            Tile tile = pathC.GetClosestPathTile(crop.Center);
-            if (tile != null)
+            Waypoint waypoint = waypointController.GetClosestWaypoint(crop.GetWorldPosition());
+            if (waypoint != null)
             {
-                SpawnUnit(waypointController.GetClosestWaypoint(crop.GetWorldPosition()), crop.CropData.UnitData, crop.GetWorldPosition());
+                SpawnUnit(waypoint, crop.CropData.UnitData, crop.GetWorldPosition());
             }
         }
 

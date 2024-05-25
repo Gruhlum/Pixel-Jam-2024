@@ -19,9 +19,10 @@ MonoBehaviour:
   - data: {fileID: 11400000, guid: ebfc2910b0e5dec43b6d17928651717c, type: 2}
     value: 2
   unitData: {fileID: 11400000, guid: 2705d763b56e0334e912f92ece158d27, type: 2}
-  requiredGrowthTicks: 16
+  requiredGrowthTicks: 18
   maximumDryTicks: 12
   waterPerTick: 1
+  sellPrice: 4
   sprites:
   - {fileID: -1957341768, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
   - {fileID: -170439489, guid: 1bc2882012bd75540bdb7ed35cdea849, type: 3}
